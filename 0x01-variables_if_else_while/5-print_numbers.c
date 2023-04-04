@@ -1,17 +1,18 @@
 #include <stdio.h>
-
 /**
-* main - Print all single digit numbers
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+
 int main(void)
 {
-	int digit;
+	int a = 0;
 
-	for (digit = 0; digit < 10; digit++)
-	printf("%i", digit);
-	putchar('\n');
-
+	while (a <= 0)
+	{
+		putchar(a);
+		a++;
+	}
 	return (0);
 }
