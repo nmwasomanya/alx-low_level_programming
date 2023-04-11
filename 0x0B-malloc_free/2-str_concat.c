@@ -8,45 +8,17 @@
  * Return: Always 0
  */
 
-char* str_concat(char* str1, char* str2) {
-    if (str1 == NULL) {
-        str1 = "";
-    }
+char *str_concat(char *s1, char *s2)
+{
+    char *result;
+    int len1 = strlen(s1), len2 = strlen(s2);
 
-    if (str2 == NULL) {
-        str2 = "";
-    }
-
-    int length1 = 0;
-    while (str1[length1] != '\0') {
-        length1++;
-    }
-
-    int length2 = 0;
-    while (str2[length2] != '\0') {
-        length2++;
-    }
-
-    char* concatenated_string = (char*)malloc(sizeof(char) * (length1 + length2 + 1));
-
-    if (concatenated_string == NULL) {
+    result = malloc(len1 + len2 + 1);
+    if (result == NULL)
         return NULL;
-    }
 
-    int i = 0;
-    while (str1[i] != '\0') {
-        concatenated_string[i] = str1[i];
-        i++;
-    }
+    strcpy(result, s1);
+    strcpy(result + len1, s2);
 
-    int j = 0;
-    while (str2[j] != '\0') {
-        concatenated_string[i] = str2[j];
-        i++;
-        j++;
-    }
-
-    concatenated_string[i] = '\0';
-
-    return concatenated_string;
+    return result;
 }
