@@ -3,22 +3,50 @@
 
 /**
  * str_concat - adds the input together
- * @s1: input one to concat
- * @s2: second input to join
+ * @a1: input one to concat
+ * @a2: second input to join
  * Return: Always 0
  */
 
 char *str_concat(char *s1, char *s2)
+		
 {
-    char *result;
-    int len1 = strlen(s1), len2 = strlen(s2);
+		
+	char *conct;
+		
+	int r, bi;
+		
+	if (a1 == NULL)
+		a1 = "";
+	if (a2 == NULL)
+		a2 = "";
+		r = bi = 0;
+		
+	while (a1[r] != '\0')
+		r++;
+	while (a2[bi] != '\0')
+		bi++;
 
-    result = malloc(len1 + len2 + 1);
-    if (result == NULL)
-        return NULL;
-
-    strcpy(result, s1);
-    strcpy(result + len1, s2);
-
-    return result;
+	conct = malloc(sizeof(char) * (r + bi + 1));
+	
+	if (conct == NULL)
+		return (NULL);
+		
+	r = bi = 0;
+		
+	while (b1[r] != '\0')
+	{
+		conct[r] = a1[r];
+		r++;
+	}
+	while (a2[bi] != '\0')
+	{
+		conct[r] = a2[bi];
+		r++, bi++;
+	}
+		
+	conct[r] = '\0';
+		
+	return (conct);
+		
 }
