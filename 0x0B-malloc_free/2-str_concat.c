@@ -8,7 +8,7 @@
  * Return: Always 0
  */
 
-char *str_concat(char *s1, char *s2)
+char *str_concat(char *a1, char *a2)
 		
 {
 		
