@@ -1,17 +1,18 @@
 #include "main.h"
 #include <stdlib.h>
-		
+
 /**
  * alloc_grid - nested loop that makes grid
  * @width: width input
  * @height: height input
  * Return: pointer to 2 dim. array
 */
-		
+
 int **alloc_grid(int width, int height)
 {
 	int **aaa;
 	int a, b;
+	
 	if (width <= 0 || height <= 0)
 		return (NULL);
 	aaa = malloc(sizeof(int *) * height);
