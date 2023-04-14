@@ -10,13 +10,14 @@
 
 void print_rev(char *str)
 {
-    int len = strlen(str);
-    int i = len - 1;
-    while (str[i] != str[0])
-    {
-        printf("%c", str[i]);
-        --i;
-    }
-    printf("%c", str[0]);
-    putchar('\n');
+	int len = strlen(str);
+	int i = len - 1;
+
+	while (str[i] != str[0])
+	{
+		printf("%c", str[i]);
+		--i;
+	}
+	putchar(str[0);
+	putchar('\n');
 }
