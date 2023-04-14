@@ -18,4 +18,5 @@ void print_rev(char *str)
         --i;
     }
     printf("%c", str[0]);
+    putchar('\n');
 }
