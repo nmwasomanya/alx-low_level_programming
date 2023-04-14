@@ -2,7 +2,6 @@
 
 /**
  * swap_int - swaps two integers
- * 
  * @a: first argument
  * @b: second argument
  */
