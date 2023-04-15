@@ -9,8 +9,8 @@
 
 int main(int argc, char *argv[])
 {
-       	int current_num, digit, total_sum = 0;
-	
+	int current_num, digit, total_sum = 0;
+
 	for (current_num = 1; current_num < argc; current_num++)
 	{
 		for (digit = 0; argv[current_num][digit]; digit++)
