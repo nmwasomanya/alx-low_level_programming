@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*i*
+/**
  * main - Entry point
  * @argc: number of arguments
  * @argv: array of arguments
@@ -9,8 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	printf("%s", argv[0]);
-	printf("\n");
+	printf("%s\n", argv[0]);
 
 	return (0);
 }
