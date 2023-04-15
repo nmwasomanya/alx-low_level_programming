@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - entry point
+ * @argc: counter
+ * @argv: array
+ * Return: 0 if success or 1 if fail
+ */ 
 
 int main(int argc, char *argv[])
 {
@@ -13,7 +19,7 @@ int main(int argc, char *argv[])
 	{
 		int num1 = atoi(argv[1]);
 		int num2 = atoi(argv[2]);
-		int sum = num1 * num2;
+		int product = num1 * num2;
 		printf("%d\n", sum);
 
 		return (0);
