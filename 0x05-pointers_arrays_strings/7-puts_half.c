@@ -1,5 +1,6 @@
 #include <string.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * puts_half - prints the last half
@@ -26,10 +27,10 @@ void puts_half(char *str)
 		
 		while(str[i] != '\0')
 		{
-			putchar(str[i];
+			putchar(str[i]);
 			i++;
 		}
 	}
-	putchar('\n')
+	putchar('\n');
 }
 
