@@ -4,8 +4,10 @@
  * _sqrt_recursion - main funct
  * @n: int n
  * @x: input integer
+ * @y: second input integer
  * Return: int
  */
+
 int sqrt_helper(int x, int y);
 int _sqrt_recursion(int n)
 {
