@@ -8,7 +8,7 @@
  * Return: 1 if true or 0 if not
  */
 
-int prime_helper(int x, int y);
+int prime_helper(int x, int y)
 {
 	if (y == x)
 	{
