@@ -1,9 +1,9 @@
 #include "main.h"
 
-/**_sqrt_recursion - finds square root
- * @n: input number
- *
- * Return: sqrt or -1 if no sqrt found
+/**
+ * _sqrt_recursion - main funct
+ * @n: int n
+ * Return: int
  */
 
 int _sqrt_recursion(int n)
