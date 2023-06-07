@@ -5,7 +5,7 @@
  * @n: int n
  * Return: int
  */
-
+int sqrt_helper(int x, int y);
 int _sqrt_recursion(int n)
 {
 	if (n == 1)
@@ -16,5 +16,22 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (0);
+	return sqrt_helper(n, 1);
+}
+
+/**
+ * sqrt_helper - helps
+ * @x: arg
+ * @y: arg
+ *
+ * Return: the square root
+ */
+
+int sqrt_helper(int x, int y)
+{
+	if ((y * y)== x)
+	{
+		return (y);
+	}
+	return sqrt_helper(x, y + 1);
 }
