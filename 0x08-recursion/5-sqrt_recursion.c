@@ -2,7 +2,6 @@
 
 /**
  * _sqrt_recursion - main funct
- * @n: int n
  * @x: input integer
  * @y: second input integer
  * Return: int
