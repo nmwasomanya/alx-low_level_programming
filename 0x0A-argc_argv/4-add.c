@@ -26,13 +26,13 @@ int main(int argc, char *argv[])
 	{
 		char *endptr;
 		long num  = strtol(argv[i], &endptr, 10);
-		
+
 		if (*endptr != '\0' && !isdigit(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
 		}
-		
+
 		sum = sum + (int)num;
 	}
 	printf("%d\n", sum);
