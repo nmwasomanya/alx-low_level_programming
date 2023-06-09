@@ -30,14 +30,5 @@ int main(int argc, char *argv[])
 		printf("%d\n", cents);
 	}
 	
-	
-
-
-
-
-
-
-
-
 	return (0);
 }

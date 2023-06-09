@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - Prints the sum of number passed to it.
@@ -23,12 +24,16 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!atoi(argv[i]))
+		char *endptr;
+		long num  = strtol(argv[i], &endptr, 10);
+		
+		if (*endptr != '\0' || !isdigit(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
 		}
-		sum = sum + atoi(argv[i]);
+		
+		sum = sum + (int)num;
 	}
 	printf("%d\n", sum);
 
