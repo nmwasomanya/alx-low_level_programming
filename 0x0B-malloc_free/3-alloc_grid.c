@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 
@@ -12,11 +11,11 @@
 
 int **alloc_grid(int width, int height)
 {
-	int i, **arr;
+	int i, j, **arr;
 	if (height <= 0 || width <= 0)
 		return (NULL);
 
-	arr = (int *)malloc(size(int *) * width);
+	arr = malloc(sizeof(int *) * width);
 	
 	if (arr == NULL)
 	{
