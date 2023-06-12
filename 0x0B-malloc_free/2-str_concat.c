@@ -15,12 +15,12 @@ char *str_concat(char *s1, char *s2)
 	int len;
 	char *dest;
 	int i, j;
-	
+
 	if  (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	
+
 	len = strlen(s1) + strlen(s2) + 1;
 	dest = (char *)malloc(len * sizeof(char));
 	i = 0;
@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 		dest[i] = s1[i];
 		i++;
 	}
-	
+
 	while (s2[j] != '\0')
 	{
 		dest[i] = s2[j];
