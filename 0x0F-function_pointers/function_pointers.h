@@ -1,3 +1,4 @@
+#include <stddef.h>
 #ifndef __HEADER__
 #define __HEADER__
 
