@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	/*int len = strlen(format);*/
-	int i = 0, j = 1;
+	int i = 0, j = 0;
 	char s;
 
 	va_start(ap, format);
@@ -21,28 +21,28 @@ void print_all(const char * const format, ...)
 		switch (s)
 		{
 		case 'c':
-			if (!j)
-				printf(", ");
+			switch (j)
+			{case 1: printf(", ");}
 			printf("%c", va_arg(ap, int));
-			j = 0;
+			j = 1;
 			break;
 		case 'i':
-			if (!j)
-				printf(", ");
+			switch (j)
+			{case 1: printf(", ");}
 			printf("%d", va_arg(ap, int));
-			j = 0;
+			j = 1;
 			break;
 		case 's':
-			if (!j)
-				printf(", ");
+			switch (j)
+			{case 1: printf(", ");}
 			printf("%s", va_arg(ap, char *));
-			j = 0;
+			j = 1;
 			break;
 		case 'f':
-			if (!j)
-				printf(", ");
+			switch (j)
+			{case 1: printf(", ");}
 			printf("%f", (float)va_arg(ap, double));
-			j = 0;
+			j = 1;
 			break;
 		default:
 			break;
