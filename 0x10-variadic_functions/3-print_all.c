@@ -44,7 +44,7 @@ void print_all(const char * const format, ...)
 		case 'f':
 			switch (j)
 			{case 1: printf(", ");}
-			printf("%f", (float)va_arg(ap, double));
+			printf("%f", va_arg(ap, double));
 			j = 1;
 			break;
 		default:
