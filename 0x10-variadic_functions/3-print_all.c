@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	/*int len = strlen(format);*/
 	int i = 0, j = 0;
-	char s;
+	char s, *str;
 
 	va_start(ap, format);
 	while (format[i] != '\0')
@@ -35,7 +35,10 @@ void print_all(const char * const format, ...)
 		case 's':
 			switch (j)
 			{case 1: printf(", ");}
-			printf("%s", va_arg(ap, char *));
+			str = va_arg(ap, char *);
+			if (!str)
+					printf("(nil)");
+			printf("%s", str);
 			j = 1;
 			break;
 		case 'f':
