@@ -43,6 +43,8 @@ void print_all(const char * const format, ...)
 			printf("%f", (float)va_arg(ap, double));
 			j = 0;
 			break;
+		default:
+			break;
 		}
 		i++;
 	}
